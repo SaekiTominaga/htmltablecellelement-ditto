@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>&lt;table class="js-table-cell-ditto"&gt; Sample</title>
+		<style>
+			button {
+				padding: 1em;
+			}
+
+			table {
+				border-collapse: collapse;
+			}
+
+			th,
+			td {
+				padding: 0.5em;
+				border: 1px solid;
+			}
+
+			td {
+				color: #000;
+				background-color: #fff;
+			}
+
+			th {
+				color: #000;
+				background-color: #eee;
+			}
+
+			tbody > tr:first-child > :-webkit-any(th, td) {
+				border-top-width: 2px;
+			}
+			tbody > tr:first-child > :is(th, td) {
+				border-top-width: 2px;
+			}
+
+			tfoot > tr:first-child > th {
+				border-top-width: 2px;
+			}
+		</style>
+		<script type="module">
+			import TableCellDitto from './dist/TableCellDitto.esm.js';
+
+			let ditto = false;
+			document.querySelector('.js-toggle-ditto').addEventListener('click', () => {
+				if (!ditto) {
+					for (const tableElement of document.querySelectorAll('.js-table-cell-ditto')) {
+						const tableCellDitto = new TableCellDitto(tableElement);
+						tableCellDitto.convert();
+					}
+				} else {
+					for (const tableElement of document.querySelectorAll('.js-table-cell-ditto')) {
+						const tableCellDitto = new TableCellDitto(tableElement);
+						tableCellDitto.unConvert();
+					}
+				}
+
+				ditto = !ditto;
+			});
+		</script>
+	</head>
+	<body>
+		<h1>&lt;table class="js-table-cell-ditto"&gt; Sample</h1>
+
+		<p><button type="button" class="js-toggle-ditto">Switching</button></p>
+
+		<table class="js-table-cell-ditto">
+			<thead>
+				<tr>
+					<th scope="col">header cell</th>
+					<th scope="col">header cell</th>
+					<th scope="col">header cell</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">header cell</th>
+					<td>data cell 1 (Left justified)</td>
+					<td>data cell 2</td>
+				</tr>
+				<tr>
+					<th scope="row">header cell</th>
+					<td>data cell 1</td>
+					<td>data cell </td>
+				</tr>
+				<tr>
+					<th scope="row">header cell</th>
+					<td title="タイトル">data cell 1</td>
+					<td>data cell 2</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<th scope="row">header cell</th>
+					<td style="text-align: center">data cell 1 (Centered)</td>
+					<td style="text-align: end">data cell 2 (Right justified)</td>
+				</tr>
+				<tr>
+					<th scope="row">header cell</th>
+					<td style="text-align: center">data cell 1</td>
+					<td rowspan="2" style="text-align: end">data cell 2</td>
+				</tr>
+				<tr>
+					<th scope="row">header cell</th>
+					<td style="text-align: center">data cell 1</td>
+				</tr>
+				<tr>
+					<th scope="row">header cell</th>
+					<td style="text-align: center">data cell 1</td>
+					<td style="text-align: end">data cell 2</td>
+				</tr>
+				<tr>
+					<th scope="row">header cell</th>
+					<td style="text-align: center">data cell 1</td>
+					<td style="text-align: end">data cell 2</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th scope="col">header cell</th>
+					<th scope="col">header cell</th>
+					<th scope="col">header cell</th>
+				</tr>
+			</tfoot>
+		</table>
+
+		<ul>
+			<li>† Does not support tables with horizontal joins by the <code>colspan</code> attribute (<code>rowspan</code> attribute is supported).</li>
+			<li>† The <code>title</code> attribute cannot be specified in the <code>&lt;td&gt;</code> element (it will be overwritten by this function).</li>
+		</ul>
+	</body>
+</html>
