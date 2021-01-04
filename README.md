@@ -1,8 +1,8 @@
-# Display the data cell with the same content as the cell directly above in <tbody> with a ditto mark.
+# Display the data cell with the same content as the cell directly above in `<tbody>` with a ditto mark.
 
 [![npm version](https://badge.fury.io/js/%40saekitominaga%2Fhtmltablecellelement-ditto.svg)](https://badge.fury.io/js/%40saekitominaga%2Fhtmltablecellelement-ditto)
 
-Display the data cell with the same content as the cell directly above in <tbody> with a ditto mark.
+Display the data cell with the same content as the cell directly above in `<tbody>` with a ditto mark.
 
 - † Does not support tables with horizontal joins by the `colspan` attribute (`rowspan` attribute is supported).
 - † The `title` attribute cannot be specified in the `<td>` element (it will be overwritten by this function).
