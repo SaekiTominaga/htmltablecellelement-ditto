@@ -4,6 +4,9 @@
 
 Display the data cell with the same content as the cell directly above in <tbody> with a ditto mark.
 
+- † Does not support tables with horizontal joins by the `colspan` attribute (`rowspan` attribute is supported).
+- † The `title` attribute cannot be specified in the `<td>` element (it will be overwritten by this function).
+
 ## Demo
 
 - [Demo page](https://saekitominaga.github.io/htmltablecellelement-ditto/demo.html)
