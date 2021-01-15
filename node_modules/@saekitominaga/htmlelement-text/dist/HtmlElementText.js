@@ -48,3 +48,4 @@ export default class {
     }
 }
 _thisElement = new WeakMap();
+//# sourceMappingURL=HtmlElementText.js.map

@@ -18,4 +18,4 @@ export default class {
      */
     getWidth(text?: string): number;
 }
-//# sourceMappingURL=HtmlElementText.esm.d.ts.map
+//# sourceMappingURL=HtmlElementText.d.ts.map

@@ -28,12 +28,12 @@
 		"build": "run-p _build:*"
 	},
 	"dependencies": {
-		"@saekitominaga/htmlelement-text": "^1.1.1"
+		"@saekitominaga/htmlelement-text": "^1.2.0"
 	},
 	"devDependencies": {
 		"@types/w3c-css-typed-object-model-level-1": "^20180410.0.2",
-		"@typescript-eslint/eslint-plugin": "^4.11.1",
-		"@typescript-eslint/parser": "^4.11.1",
+		"@typescript-eslint/eslint-plugin": "^4.13.0",
+		"@typescript-eslint/parser": "^4.13.0",
 		"brotlin": "^1.1.0",
 		"cpy-cli": "^3.1.1",
 		"eslint": "^7.17.0",
