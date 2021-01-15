@@ -12,7 +12,7 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return privateMap.get(receiver);
 };
 var _thisElement, _dittoMark, _dittoMarkWidth, _supportCSSTypedOM;
-import HtmlElementText from '../../htmlelement-text/dist/HtmlElementText.esm.js';
+import HtmlElementText from '../../htmlelement-text/dist/HtmlElementText.js';
 /**
  * Display the data cell with the same content as the cell directly above in <tbody> with a ditto mark.
  *
@@ -166,3 +166,4 @@ export default class {
     }
 }
 _thisElement = new WeakMap(), _dittoMark = new WeakMap(), _dittoMarkWidth = new WeakMap(), _supportCSSTypedOM = new WeakMap();
+//# sourceMappingURL=TableCellDitto.js.map

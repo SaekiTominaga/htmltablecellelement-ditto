@@ -10,10 +10,11 @@
 			{
 				"transform": "ts-transformer-replace-paths",
 				"replaceImportPaths": {
-					"^@saekitominaga/htmlelement-text$": "../../htmlelement-text/dist/HtmlElementText.esm.js",
+					"^@saekitominaga/htmlelement-text$": "../../htmlelement-text/dist/HtmlElementText.js",
 				}
 			}
 		],
+		"sourceMap": true,
 		"target": "ES2020",
 
 		/* Strict Checks */

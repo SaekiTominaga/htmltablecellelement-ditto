@@ -22,4 +22,4 @@ export default class {
      */
     unConvert(): void;
 }
-//# sourceMappingURL=TableCellDitto.esm.d.ts.map
+//# sourceMappingURL=TableCellDitto.d.ts.map
