@@ -12,7 +12,7 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return privateMap.get(receiver);
 };
 var _thisElement, _dittoMark, _dittoMarkWidth, _supportCSSTypedOM;
-import HtmlElementText from '../node_modules/@saekitominaga/htmlelement-text/dist/HtmlElementText.js';
+import HtmlElementText from '../../htmlelement-text/dist/HtmlElementText.js';
 /**
  * Display the data cell with the same content as the cell directly above in <tbody> with a ditto mark.
  *

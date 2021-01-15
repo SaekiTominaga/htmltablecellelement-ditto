@@ -10,7 +10,7 @@
 			{
 				"transform": "ts-transformer-replace-paths",
 				"replaceImportPaths": {
-					"^@saekitominaga/htmlelement-text$": "../node_modules/@saekitominaga/htmlelement-text/dist/HtmlElementText.js",
+					"^@saekitominaga/htmlelement-text$": "../../htmlelement-text/dist/HtmlElementText.js",
 				}
 			}
 		],
