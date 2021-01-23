@@ -13,7 +13,7 @@ Display the data cell with the same content as the cell directly above in `<tbod
 
 ## Examples
 
-```
+```HTML
 <script type="module">
 import TableCellDitto from './dist/TableCellDitto.esm.js';
 
@@ -45,7 +45,7 @@ for (const tableElement of document.querySelectorAll('.js-table-cell-ditto')) {
 
 ## Constructor
 
-```
+```TypeScript
 new TableCellDitto(
   thisElement: HTMLTableElement,
   dittoMark = '"'
